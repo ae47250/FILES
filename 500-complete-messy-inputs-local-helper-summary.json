@@ -1,0 +1,110 @@
+{
+  "dataset": "500-complete-messy-inputs",
+  "cases": 500,
+  "variants": {
+    "base": {
+      "average_distance_score": 5.13,
+      "helped": 0,
+      "same": 500,
+      "hurt": 0,
+      "classifications": {
+        "needs_live_test": 500
+      }
+    },
+    "base_plus_text": {
+      "average_distance_score": 5.13,
+      "helped": 0,
+      "same": 500,
+      "hurt": 0,
+      "classifications": {
+        "needs_live_test": 500
+      }
+    },
+    "base_plus_contact": {
+      "average_distance_score": 8,
+      "helped": 0,
+      "same": 0,
+      "hurt": 500,
+      "classifications": {
+        "needs_live_test": 500
+      }
+    },
+    "base_plus_price_option": {
+      "average_distance_score": 8,
+      "helped": 0,
+      "same": 0,
+      "hurt": 500,
+      "classifications": {
+        "needs_live_test": 500
+      }
+    },
+    "base_plus_text_contact": {
+      "average_distance_score": 8,
+      "helped": 0,
+      "same": 0,
+      "hurt": 500,
+      "classifications": {
+        "needs_live_test": 500
+      }
+    },
+    "base_plus_contact_text": {
+      "average_distance_score": 8,
+      "helped": 0,
+      "same": 0,
+      "hurt": 500,
+      "classifications": {
+        "needs_live_test": 500
+      }
+    },
+    "base_plus_text_contact_price_option": {
+      "average_distance_score": 8,
+      "helped": 0,
+      "same": 0,
+      "hurt": 500,
+      "classifications": {
+        "needs_live_test": 500
+      }
+    },
+    "base_plus_contact_text_price_option": {
+      "average_distance_score": 8,
+      "helped": 0,
+      "same": 0,
+      "hurt": 500,
+      "classifications": {
+        "needs_live_test": 500
+      }
+    }
+  },
+  "top_failure_flags": [
+    {
+      "flag": "number_confusion",
+      "count": 4000
+    },
+    {
+      "flag": "validation_blocked",
+      "count": 3824
+    },
+    {
+      "flag": "low_confidence_spans",
+      "count": 3680
+    },
+    {
+      "flag": "price_unclear",
+      "count": 3588
+    },
+    {
+      "flag": "option_parsing_gap",
+      "count": 468
+    }
+  ],
+  "safe_helpful_count": 0,
+  "safe_neutral_count": 0,
+  "unsafe_hurt_count": 0,
+  "needs_live_test_count": 4000,
+  "best_variants_for_live_testing": [
+    "base_plus_text_contact_price_option",
+    "base_plus_contact_text_price_option",
+    "base_plus_text_contact"
+  ],
+  "row_count": 4000
+}
