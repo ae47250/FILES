@@ -1,0 +1,625 @@
+{
+  "taskScope": "Source collection only. No PathFinder field values, no core/supporting concept assignments.",
+  "inventorySource": "purdue-west-lafayette__public-programs__2026-08-13.json (user-supplied, 156 recommendation-eligible programs)",
+  "completedMajorsExcluded": 40,
+  "totalRemainingInScope": 116,
+  "programsProcessedThisTurn": 3,
+  "programsFullyComplete": 4,
+  "programsPartial": 1,
+  "programsNotStarted": 111,
+  "status": "PARTIAL — see honest status note below",
+  "statusNote": "This file contains genuinely fetched, source-verified evidence for 5 of 116 programs (2 from a prior turn: Pharmaceutical Sciences COMPLETE, Veterinary Technology PARTIAL; 3 from this turn: Accounting, Finance, and Supply Chain and Operations Management, all Daniels School of Business, all COMPLETE). It does not contain entries for the other 111 — those are not fabricated. This completes the Daniels School of Business college (3/3 remaining programs done). Full completion of the remaining 111 requires substantially more tool calls than fit in a single turn. See processingLog for the batching plan and per-college status.",
+  "programs": [
+    {
+      "publicProgramId": "purdue-wl:pharmaceutical-sciences",
+      "displayName": "Pharmaceutical Sciences",
+      "degree": "BS (BSPS)",
+      "school": "Pharmacy",
+      "collectionStatus": "COMPLETE",
+      "authoritativeSourceUrls": [
+        {
+          "url": "https://pharmacy.purdue.edu/oss/curriculum/",
+          "role": "curriculum guide index page — lists dated plan-of-study PDFs by entry year",
+          "fetchedContent": true
+        },
+        {
+          "url": "https://pharmacy.purdue.edu/wp-content/uploads/2026/08/Bachelor-of-Science-in-Pharmaceutical-Sciences-2026.pdf",
+          "role": "PRIMARY — current plan of study, dated 'Updated May 2026', titled '2026-2027 Curriculum Guide'",
+          "fetchedContent": true
+        },
+        {
+          "url": "https://pharmacy.purdue.edu/bsps/",
+          "role": "program/department page — program description, admission process, 4+1 BSPS/MPH note",
+          "fetchedContent": true
+        },
+        {
+          "url": "https://admissions.purdue.edu/majors/pharmaceutical-sciences/",
+          "role": "admissions major page — program framing, not used for requirement detail",
+          "fetchedContent": false,
+          "note": "returned in search snippet only; not fetched directly, content overlaps pharmacy.purdue.edu/bsps/"
+        }
+      ],
+      "catalogYearUsed": "2026-2027 (explicitly dated 'Updated May 2026' on the source PDF — current, no fallback needed)",
+      "programDescriptionEvidence": [
+        "The Bachelor of Science in Pharmaceutical Sciences (BSPS) is a four-year degree program that begins with a foundation of coursework in mathematics and the basic sciences — chemistry, biology, and physics. This interdisciplinary program then progresses to advanced coursework in the pharmaceutical sciences, including aspects of drug design and synthesis, mechanisms of drug action, pharmacology and toxicology, dosage formulation, manufacturing, quality assurance, and regulatory compliance.",
+        "This is not a professional degree program and completion of the BSPS degree does not qualify graduates to take the state board examination to become a registered pharmacist.",
+        "The BSPS program trains students for diverse positions in industrial, academic, or other research environments within the areas of drug discovery, development, and commercialization.",
+        "It also prepares students for professional or graduate studies in graduate education in pharmaceutical, medical, and basic sciences and post-baccalaureate professional education in medicine, law, and business.",
+        "Pharmaceutical Sciences majors can participate in the 4+1 BSPS/MPH degree program. Graduates experience a streamlined approach toward the MPH degree while completing all their undergraduate BSPS requirements."
+      ],
+      "requiredCredits": 120,
+      "requiredCourseSequence": {
+        "note": "Full 8-semester plan of study, verbatim course codes and credit hours as published. UCC-fulfilling courses marked per source footnote 1. Selective categories retained as named by the source; specific selective course lists were not enumerated on this page (see unresolvedGaps).",
+        "fallSemesterOne": [
+          {"credits": 4, "course": "BIOL 11000 Fundamentals of Biology I", "alternativeOf": "BIOL 20300 Anatomy & Physiology I", "ucc": true},
+          {"credits": 5, "course": "CHM 12901 General Chemistry with Biological Focus"},
+          {"credits": 3, "course": "MA 16010 Applied Calculus I", "ucc": true},
+          {"credits": 1, "course": "PHSC 10000 Pharmacy Orientation I"},
+          {"credits": 3, "course": "Oral Communication UCC Selective", "ucc": true}
+        ],
+        "springSemesterTwo": [
+          {"credits": 4, "course": "BIOL 11100 Fundamentals of Biology II", "alternativeOf": "BIOL 20400 Anatomy & Physiology II"},
+          {"credits": 3, "course": "MA 16020 Applied Calculus II"},
+          {"credits": 3, "course": "PHSC 20400 Organic Chemistry I", "note": "requires cumulative GPA 2.5+ to enroll"},
+          {"credits": 1, "course": "PHSC 20401 Organic Chemistry I Lab", "note": "requires cumulative GPA 2.5+ to enroll"},
+          {"credits": 3, "course": "Written Communication UCC Selective", "ucc": true}
+        ],
+        "fallSemesterThree": [
+          {"credits": 4, "course": "BIOL 20300 Anatomy & Physiology I", "alternativeOf": "BIOL 11000 Fundamentals of Biology I"},
+          {"credits": 4, "course": "BIOL 22100 Introduction to Microbiology", "alternativeOf": "PHYS 22000 General Physics I", "conditional": true},
+          {"credits": 3, "course": "PHSC 20500 Organic Chemistry II", "note": "requires cumulative GPA 2.5+ to enroll"},
+          {"credits": 1, "course": "PHSC 20501 Organic Chemistry II Lab", "note": "requires cumulative GPA 2.5+ to enroll"},
+          {"credits": 3, "course": "STAT 30100 Elementary Statistical Methods"}
+        ],
+        "springSemesterFour": [
+          {"credits": 4, "course": "BIOL 20400 Anatomy & Physiology II", "alternativeOf": "BIOL 11100 Fundamentals of Biology II"},
+          {"credits": 4, "course": "PHYS 22000 General Physics I", "alternativeOf": "BIOL 22100 Introduction to Microbiology", "conditional": true},
+          {"credits": 3, "course": "PHSC 20800 Biochemistry for Pharmaceutical Science", "note": "requires cumulative GPA 2.5+ to enroll"},
+          {"credits": 3, "course": "PHSC 42200 Immunology", "note": "requires cumulative GPA 2.5+ to enroll"},
+          {"credits": 3, "course": "AGEC 21700 Economics", "ucc": true}
+        ],
+        "fallSemesterFive": [
+          {"credits": 3, "course": "PHSC 42400 Pathophysiology / Drug Action"},
+          {"credits": 3, "course": "PHSC 42800 Dosage Forms I"},
+          {"credits": 2, "course": "PHSC 43600 Biochemistry for Pharmaceutical Science II"},
+          {"credits": 1, "course": "PHSC 20100 BSPS Orientation II"},
+          {"credits": 3, "course": "Science, Technology, & Society UCC Selective", "ucc": true},
+          {"credits": 3, "course": "Electives"}
+        ],
+        "springSemesterSix": [
+          {"credits": 4, "course": "CHM 37200 Physical Chemistry"},
+          {"credits": 2, "course": "PHSC 42900 Dosage Forms II"},
+          {"credits": 3, "course": "PHSC 44400 Drug Classes and Mechanisms"},
+          {"credits": 3, "course": "Humanities UCC Selective", "ucc": true}
+        ],
+        "fallSemesterSeven": [
+          {"credits": 3, "course": "PHSC 46000 Drug Discovery & Development I"},
+          {"credits": 1, "course": "PHSC 40000 Research Methods & Pharmacokinetics"},
+          {"credits": 3, "course": "Pharmacy Leadership Selective", "conditional": true, "note": "options listed in student's mPP, not enumerated on this source"},
+          {"credits": 3, "course": "Pharmacy Special Interest Selective", "conditional": true, "note": "options listed in student's mPP, not enumerated on this source"},
+          {"credits": 3, "course": "Professional Writing Selective", "conditional": true, "note": "options listed in student's mPP, not enumerated on this source"},
+          {"credits": 3, "course": "Electives"},
+          {"credits": null, "course": "Pharmacy Experiential Selective", "conditional": true, "note": "credit value not specified on this source; options listed in student's mPP"}
+        ],
+        "springSemesterEight": [
+          {"credits": 3, "course": "PHSC 46100 Drug Discovery & Development II"},
+          {"credits": 2, "course": "PHSC 48500 Intercultural & Global Health Issues"},
+          {"credits": 3, "course": "Pharmacy Special Interest Selective", "conditional": true},
+          {"credits": 7, "course": "Electives"}
+        ]
+      },
+      "requirementLinesVerbatim": [
+        "1. Fulfills University Undergraduate Core Curriculum (UCC) requirements.",
+        "2. Must have a cumulative GPA of 2.5 or higher to enroll.",
+        "3. Review your mPP for Pharmacy Selective options.",
+        "4. Review your mPP for Pharmacy Experiential Selective options.",
+        "This plan of study represents one option for completing degree requirements and does not include AP, IB, or dual-enrollment credit earned during high school. Meet with a College of Pharmacy academic advisor to determine an individualized plan of study."
+      ],
+      "concentrationOrOptionMaterial": [
+        {
+          "label": "4+1 BSPS/MPH combined degree",
+          "conditional": true,
+          "evidence": "Pharmaceutical Sciences majors can participate in the 4+1 BSPS/MPH degree program. Graduates experience a streamlined approach toward the MPH degree while completing all their undergraduate BSPS requirements.",
+          "source": "https://pharmacy.purdue.edu/bsps/",
+          "separatePlanExists": "https://pharmacy.purdue.edu/wp-content/uploads/2025/05/BSPS_MPH-PoS-202566.pdf (not fetched — out of scope, this is a distinct combined-degree pathway, not the base BSPS)"
+        }
+      ],
+      "unresolvedSourceGaps": [
+        "Pharmacy Leadership Selective — specific course options not enumerated on the fetched plan of study; source directs students to their individual mPP (advising plan), which is not a public document.",
+        "Pharmacy Special Interest Selective — same as above, options not publicly enumerated.",
+        "Professional Writing Selective — same as above; likely maps to ENGL/COM technical or professional writing courses but exact list not confirmed.",
+        "Pharmacy Experiential Selective — credit value and specific placement/internship options not enumerated on this source; described only as reviewable via mPP. This is the single most important gap for the experiential_practice field and should be prioritized if a follow-up fetch is done.",
+        "PHSC course descriptions (e.g., what PHSC 46000/46100 Drug Discovery & Development I/II actually involve — lecture, lab, project-based) were not fetched. Course-description-level detail was not pursued given turn-budget constraints."
+      ]
+    },
+    {
+      "publicProgramId": "purdue-wl:veterinary-technology",
+      "displayName": "Veterinary Technology",
+      "degree": "BS (BSVT)",
+      "school": "Veterinary Medicine",
+      "collectionStatus": "PARTIAL — program structure confirmed, full required-course list NOT obtained",
+      "authoritativeSourceUrls": [
+        {
+          "url": "https://vet.purdue.edu/vettech/on-campus/curriculum-overview.php",
+          "role": "PRIMARY department page reached — confirms three degree tracks and links to catalog program pages",
+          "fetchedContent": true,
+          "lastUpdatedOnPage": "July 27, 2026"
+        },
+        {
+          "url": "https://catalog.purdue.edu/preview_program.php?catoid=18&poid=32142&returnto=23456",
+          "role": "Linked as 'Baccalaureate Degree' current catalog program page — THIS IS THE AUTHORITATIVE REQUIRED-COURSE SOURCE",
+          "fetchedContent": false,
+          "fetchBlocked": true,
+          "blockerDetail": "acalog preview_program.php pages return no renderable content on fetch (JS-rendered; consistent with prior findings across catoid 7, 8, 13, 15, 16, 17, 18). Requires a headless-browser-capable fetch tool not available in this environment."
+        },
+        {
+          "url": "https://admissions.purdue.edu/majors/veterinary-technology/",
+          "role": "admissions major page — program framing only",
+          "fetchedContent": true
+        },
+        {
+          "url": "https://vet.purdue.edu/vettech/about.php",
+          "role": "program overview — skills, credentialing, accreditation",
+          "fetchedContent": true
+        }
+      ],
+      "catalogYearUsed": "UNRESOLVED — the linked current catalog entry (catoid=18, i.e. 2025-2026 per this project's established catoid map) could not be opened",
+      "programDescriptionEvidence": [
+        "The Veterinary Technology program is a science-based veterinary technology program. We offer three degree options: Bachelor of Science in Veterinary Technology, Associate in Applied Science, and Bachelor of Science completion for graduates from AVMA accredited veterinary technology programs wishing to complete a Bachelor of Science in Veterinary Technology.",
+        "This unique program combines one four-year curriculum with an Associate in Applied Science (AAS) and Bachelor of Science (BSVT) options. Students wanting only the Associate degree, or who have previously completed the general education college courses found in Year One of the bachelor's degree, begin in the clinical portion, or Year Two, of the program.",
+        "Purdue's Veterinary Technology program has been AVMA accredited since 1976 and is one of only four AVMA accredited veterinary technology programs in the country affiliated with a College of Veterinary Medicine.",
+        "Veterinary technology students work with a variety of animals including small animals, large animals, laboratory animals, and exotics.",
+        "As an integral part of the veterinary team, veterinary technicians (AAS) and technologists (BSVT) perform a wide range of veterinary skills: Radiology; Nursing care, including pre and post-surgical care; Anesthesia; Client education.",
+        "If your career goal is to become a Doctor of Veterinary Medicine, the veterinary technology curriculum will not prepare you toward this degree path. Instead, consider applying to pre-veterinary medicine, animal sciences or other life sciences disciplines."
+      ],
+      "requiredCourseSequence": {
+        "note": "NOT OBTAINED. The on-campus BSVT plan of study lives behind the blocked acalog page. Distance-learning course lists were found in search results (VM-prefix courses) but the on-campus and distance-learning programs are explicitly described as separate tracks; distance-learning course data should NOT be used as a substitute for the on-campus BSVT requirement list without confirming they share a curriculum. This substitution risk is flagged rather than resolved."
+      },
+      "concentrationOrOptionMaterial": [
+        {
+          "label": "Three degree-option structure: BSVT (Baccalaureate), AAS (Associate), and BS-completion for AAS graduates from other AVMA-accredited programs",
+          "conditional": true,
+          "evidence": "We offer three degree options: Bachelor of Science in Veterinary Technology, Associate in Applied Science, and Bachelor of Science completion for graduates from AVMA accredited veterinary technology programs wishing to complete a Bachelor of Science in Veterinary Technology.",
+          "source": "https://vet.purdue.edu/vettech/on-campus/curriculum-overview.php",
+          "note": "PathFinder inventory lists 'Veterinary Technology' as a single entry; which of these three tracks (or which degree designation, BS vs BSVT) corresponds to the PathFinder-eligible program was not confirmed in this pass."
+        },
+        {
+          "label": "On-campus vs. Distance Learning tracks",
+          "conditional": true,
+          "evidence": "Two full program pathways exist (vet.purdue.edu/vettech/on-campus/ and vet.purdue.edu/vettech/distance-learning/) with separate curriculum overview pages, separate course numbering observed in search results (VM-prefix, '-DL' suffixed courses for distance learning), and separate pathway-to-success PDFs.",
+          "source": "https://vet.purdue.edu/vettech/on-campus/curriculum-overview.php; https://vet.purdue.edu/vettech/distance-learning/"
+        }
+      ],
+      "unresolvedSourceGaps": [
+        "CRITICAL: Full required-course list for the on-campus BSVT was not obtained — the catalog program page (catoid=18&poid=32142) does not render via available fetch tools. This program should be re-attempted with a headless-browser tool, or via a direct PDF plan-of-study if one exists on vet.purdue.edu (a search for a dated PDF plan of study, similar to the Pharmacy pattern, was not performed this turn due to time).",
+        "Total required credit hours not confirmed.",
+        "Whether the PathFinder-eligible 'Veterinary Technology' entry corresponds to the on-campus BSVT, distance-learning BSVT, or a track-agnostic composite was not resolved.",
+        "No course-level detail (lecture vs. lab vs. clinical placement structure) was obtained for any required course."
+      ]
+    },
+    {
+      "publicProgramId": "purdue-wl:accounting",
+      "displayName": "Accounting",
+      "degree": "BS",
+      "school": "Daniels School of Business",
+      "collectionStatus": "COMPLETE",
+      "authoritativeSourceUrls": [
+        {
+          "url": "https://catalog.purdue.edu/mime/media/17/12500/2024-Daniels-School-Combined.pdf",
+          "role": "PRIMARY — Daniels School of Business combined catalog PDF (undergraduate section). Contains full program description, complete degree-requirement breakdown, and the shared School of Business Requirements section (MAI, GPA, gateway courses, pass/no pass, transfer credit) for Accounting, BS.",
+          "fetchedContent": true
+        },
+        {
+          "url": "https://admissions.purdue.edu/majors/accounting/",
+          "role": "admissions major page — not fetched this pass; the combined catalog PDF is the more detailed and authoritative requirement source per the proven Daniels source strategy",
+          "fetchedContent": false
+        }
+      ],
+      "catalogYearUsed": "2024-2025 (fallback — see note). PDF metadata: Title 'Purdue University - 2024-2025 University Catalog', CreationDate 2024-06-14T18:55:51Z. Attempted to find a newer combined PDF first: confirmed via catalog.purdue.edu/index.php that the current live catalog is 2026-2027 (catoid=19), and a 2025-2026 catalog exists at catoid=18, but (a) no combined Daniels PDF for catoid 18 or 19 is indexed by search or discoverable by URL-pattern guessing, and (b) catalog.purdue.edu/content.php and preview_program.php pages for catoid 18 and 19 return no renderable text content on direct fetch (confirmed JS-rendered/acalog-blocked again this session, consistent with all prior sessions' findings across catoid 7, 8, 13, 15, 16, 17, 18). The 2024-Daniels-School-Combined.pdf at catoid=17 is the newest Daniels source actually retrievable.",
+      "programDescriptionEvidence": [
+        "Accountants help businesses and organizations solve problems and succeed in a rapidly changing, globally competitive environment. Accountants prepare and interpret financial information that is used in a variety of settings. Companies use accounting information in strategic planning and performance evaluation. Investors, lenders and venture capitalists use accounting information when deciding whether and where to invest their funds. Government regulators, such as the Securities and Exchange Commission and even the FBI, use accounting information to detect fraud.",
+        "With a Daniels School accounting degree, you can pursue a career in public, corporate, tax, non-profit or government accounting. Our graduates join a network of Purdue alumni who hold important positions in organizations around the world. Our graduates place nationally with Big 4 accounting firms, regional public accounting firms, Fortune 1000 companies, consulting firms, small corporations, not-for-profits and government agencies across the U.S. and internationally.",
+        "You can also prepare for the highly valued Certified Public Accountant (CPA) or Certified Management Accounting (CMA) professional certifications. The Accounting Area offers specialized courses in forensic and international accounting, two of the most important growth areas in accounting today.",
+        "In addition to your accounting classes, you will take courses in other management areas, such as operations management, finance, marketing and human resource management as you complete your accounting degree. As a result, you will leave the business school with a solid understanding of both accounting and overall business operations.",
+        "Not majoring in Accounting? You can develop valuable accounting skills by concentrating or minoring in Accounting in conjunction with other majors by taking 12 credit hours of upper division accounting classes.",
+        "For Purdue undergraduates interested in pursuing a career in accounting, our MSA Pathway Program offers an optimal route to completing the 150 hours of college credit work required to sit for the CPA exam. With conditional admission starting as early as sophomore year, eligible students can streamline their undergraduate experience and transition seamlessly into our master's program.",
+        "Our undergraduate accounting major is a 120 credit hour program that provides students with the foundation for successful careers in accounting and business or for graduate study."
+      ],
+      "requiredCredits": 120,
+      "requiredCourseSequence": {
+        "note": "Source is organized categorically (not by semester) as: Department/Program Major Courses (Required + Selectives) → Cultural Competency Selectives → Other Departmental/Program Course Requirements → Electives. Verbatim course codes, titles, and credit hours preserved below exactly as published, including the ♦ critical-course marker and 'or' alternatives.",
+        "requiredMajorCourses_63credits": [
+          "ECON 25100 - Microeconomics Credits: 3.00 ♦ (satisfies Human Cultures: Behavioral/Social Science for core)",
+          "ECON 25200 - Macroeconomics Credits: 3.00",
+          "MGMT 19700 - Careers In Accounting & Finance Credits: 1.00 ♦",
+          "MGMT 20000 - Introductory Accounting Credits: 3.00 ♦",
+          "MGMT 20100 - Management Accounting I Credits: 3.00 ♦",
+          "MGMT 25400 - Legal Foundations Of Business I Credits: 3.00",
+          "MGMT 25500 - Foundations Of Business Ethics Credits: 1.00",
+          "MGMT 29500 - Career Readiness & Exploration Credits: 1.00",
+          "MGMT 30500 - Business Statistics Credits: 3.00",
+          "MGMT 31000 - Financial Management Credits: 3.00",
+          "MGMT 32400 - Marketing Management Credits: 3.00",
+          "MGMT 33500 - Strategic Business Writing Credits: 3.00 ♦ or ENGL 42000 - Business Writing Credits: 3.00 ♦ or ENGL 42100 - Technical Writing Credits: 3.00 ♦",
+          "MGMT 34900 - Accounting Analysis & Modeling Credits: 3.00",
+          "MGMT 35000 - Intermediate Accounting I Credits: 3.00 ♦",
+          "MGMT 35100 - Intermediate Accounting II Credits: 3.00 ♦",
+          "MGMT 36100 - Operations Management Credits: 3.00",
+          "MGMT 37300 - Accounting Information Systems & Data Analytics Credits: 3.00",
+          "MGMT 38200 - Management Information Systems Credits: 3.00",
+          "MGMT 50300 - Advanced Accounting Credits: 3.00 ♦",
+          "MGMT 50400 - Tax Accounting Credits: 3.00 ♦",
+          "MGMT 50500 - Management Accounting II Credits: 3.00 ♦",
+          "MGMT 50600 - Auditing Credits: 3.00 ♦",
+          "OBHR 33000 - Introduction To Organizational Behavior Credits: 3.00"
+        ],
+        "majorSelectives_chooseThree_8to9credits": [
+          "MGMT 35200 - Strategic Management Credits: 3.00",
+          "MGMT 41100 - Investment Management Credits: 3.00",
+          "MGMT 41300 - Corporate Finance Credits: 3.00",
+          "MGMT 41500 - International Financial Management Credits: 3.00",
+          "MGMT 41601 - Corporate Mergers And Acquisitions Credits: 3.00",
+          "MGMT 44500 - Introduction To Investments And Portfolio Management Credits: 3.00",
+          "MGMT 47200 - Advanced Spreadsheet Modeling And Simulation Credits: 3.00",
+          "MGMT 47900 - Data Visualization Credits: 2.00 or 3.00",
+          "MGMT 50900 - International Accounting Credits: 3.00",
+          "MGMT 53100 - Government/Not-For-Profit Accounting Credits: 3.00"
+        ],
+        "culturalCompetencySelectives_3credits": [
+          "Cultural Competency Selectives I & II for the Daniels School of Business - Credit Hours: 3.00"
+        ],
+        "otherDepartmentalProgramCourseRequirements_23to35credits": {
+          "calculusSelective_3to5credits_QR_core": [
+            "MA 16010 - Applied Calculus I Credits: 3.00",
+            "MA 16100 - Plane Analytic Geometry And Calculus I Credits: 5.00",
+            "MA 16500 - Analytic Geometry And Calculus I Credits: 4.00"
+          ],
+          "statisticsSelective_3credits": [
+            "STAT 30301 - Probability And Statistics For Business Credits: 3.00",
+            "STAT 35000 - Introduction To Statistics Credits: 3.00",
+            "STAT 35500 - Statistics For Data Science Credits: 3.00"
+          ],
+          "oralCommunicationSelective_3credits_OC_core": [
+            "SCLA 10200 - Transformative Texts, Critical Thinking And Communication II: Modern World Credits: 3.00",
+            "COM 11400 - Fundamentals Of Speech Communication Credits: 3.00",
+            "COM 21700 - Science Writing And Presentation Credits: 3.00",
+            "EDPS 31500 - Collaborative Leadership: Interpersonal Skills Credits: 3.00"
+          ],
+          "writtenCommunicationSelective_3to4credits_IL_WC_core": [
+            "SCLA 10100 - Transformative Texts, Critical Thinking And Communication I: Antiquity To Modernity Credits: 3.00",
+            "ENGL 10600 - First Year Composition With Conferences Credits: 4.00",
+            "ENGL 10800 - First Year Composition Credits: 3.00",
+            "HONR 19903 - Interdisciplinary Approaches In Writing Credits: 3.00"
+          ],
+          "humanCulturesBehavioralSocialSciencesSelective_3credits_BSS_core": [
+            "PSY 12000 - Elementary Psychology Credits: 3.00",
+            "SOC 10000 - Introductory Sociology Credits: 3.00"
+          ],
+          "humanCulturesHumanitiesSelective_3to4credits_HUM_core": "Credit Hours: 3.00-4.00 — specific course options not enumerated on this source",
+          "science1Selective_2to5credits_core": "not enumerated on this source",
+          "science2Selective_2to5credits_core": "not enumerated on this source",
+          "scienceTechnologySocietySelective_1to3credits_STS_core": "not enumerated on this source"
+        },
+        "electives_10to23credits": "Electives - Credit 10.00-23.00 (specific courses not applicable — general electives)"
+      },
+      "requirementLinesVerbatim": [
+        "Degree Requirements: 120 Credits Required. Department/Program Major Courses (74-75 credits).",
+        "Major Selectives - Choose Three (8-9 credits)",
+        "MAI Requirements: To be admitted to upper level, a student must complete all Management Admissions Index (MAI) courses with a 3.00 or above MAI GPA AND a 2.50 cumulative GPA, have a C- or higher in all MAI AND any Management, Economics, and OBHR courses (M/E/O), and not be on academic notice.",
+        "University Policy states students may only attempt a course 3 times and grades of W are included in this limit. Per the School of Business, no more than three different MAI courses, or their equivalents, may be taken two times for a grade. Students are responsible for consulting their advisor about re-take options available to them.",
+        "Previous enrollments in MA 16100, 16200, 16500, 16600 do not count against the retake policy for the MAI.",
+        "The following are Management Admissions Index courses: ECON 25100; MGMT 20000; MA 16100 or MA 16010 or MA 16500; SCLA 10100 or ENGL 10600 or ENGL 10800 or HONR 19903; SCLA 10200 or COM 11400 or COM 21700 or EDPS 31500.",
+        "GPA Requirements: Graduation Index: 2.00 minimum. Major Index: 2.00 minimum.",
+        "Course Requirements and Notes: MGMT, OBHR and ECON courses numbered 30000-level or higher can only be taken after being admitted to Upper Division, with the exception of OBHR 33300. Students may take this course during their sophomore year.",
+        "The following gateway courses (listed by major) should be taken soon after you are admitted to Upper Division as they are pre-requisites for all Major Selectives: Accounting, BS - MGMT 35000",
+        "Courses taken on approved School of Business study abroad programs may be used to satisfy degree requirements. Students participating in a Purdue approved study abroad program are registered as full-time Purdue students during their semester abroad.",
+        "Pass/No Pass Policy: The pass/no pass option MAY NOT be selected for MAI, EAI, MGMT, ECON or OBHR (MEO) courses (even if selected as a general elective) required for a major, required minor or concentration, or core requirements. Only courses taken for general electives that are not required major, minor or concentration courses may be taken pass/no pass. The total credit hours selected under the pass/no pass option in the student's baccalaureate program may not exceed 15. The option cannot be adopted for more than one course per semester. A student who elects this option must be classified as at least a sophomore 45-59 credits or higher.",
+        "Transfer Credit Policy: Transfer credit for upper level MGMT, OBHR and ECON will only be considered if taken at a 4-year AACSB accredited school."
+      ],
+      "concentrationOrOptionMaterial": [
+        {
+          "label": "Optional Concentrations for Accounting, BS (any one, not required)",
+          "conditional": true,
+          "evidence": "Data Analytics Concentration; Hospitality and Tourism Management Concentration; Innovation Management Concentration; International Business Concentration; Larsen Leaders Academy - Leadership Concentration; Management Consulting Concentration; Management Information Systems Concentration; Marketing Concentration; Operation & Supply Chain Management Concentration — all 'in the Daniels School of Business'.",
+          "source": "https://catalog.purdue.edu/mime/media/17/12500/2024-Daniels-School-Combined.pdf"
+        }
+      ],
+      "unresolvedSourceGaps": [
+        "Human Cultures: Humanities Selective, Science #1 Selective, Science #2 Selective, and Science, Technology & Society Selective — specific course options within each category not enumerated on this combined-PDF source (only credit-hour ranges and University Core designations given).",
+        "Electives (10-23 credits) are general/unenumerated by design.",
+        "A newer catalog year (2025-2026 or 2026-2027) could not be checked against this 2024-2025 source because the corresponding acalog catalog pages do not render on fetch; if requirements changed in a newer year, this profile would not reflect it. Flagged per the catalog-year rule rather than silently assumed current.",
+        "MGMT course descriptions (lecture/case/project format) were not fetched — this source lists only titles and credit hours, not pedagogical format."
+      ]
+    },
+    {
+      "publicProgramId": "purdue-wl:finance",
+      "displayName": "Finance",
+      "degree": "BS",
+      "school": "Daniels School of Business",
+      "collectionStatus": "COMPLETE",
+      "authoritativeSourceUrls": [
+        {
+          "url": "https://catalog.purdue.edu/mime/media/17/12500/2024-Daniels-School-Combined.pdf",
+          "role": "PRIMARY — Daniels School of Business combined catalog PDF (undergraduate section). Contains full program description, complete degree-requirement breakdown, and the shared School of Business Requirements section for Finance, BS.",
+          "fetchedContent": true
+        },
+        {
+          "url": "https://admissions.purdue.edu/majors/finance/",
+          "role": "admissions major page — not fetched this pass; the combined catalog PDF is the more detailed and authoritative requirement source per the proven Daniels source strategy",
+          "fetchedContent": false
+        }
+      ],
+      "catalogYearUsed": "2024-2025 (fallback — identical situation and identical newer-year search attempt as documented in full on the Accounting entry above: current live catalog is 2026-2027/catoid=19, a 2025-2026 catalog exists at catoid=18, neither has a discoverable combined Daniels PDF, and both years' acalog content/preview pages return no renderable content on fetch). PDF metadata: Title 'Purdue University - 2024-2025 University Catalog', CreationDate 2024-06-14T18:55:51Z.",
+      "programDescriptionEvidence": [
+        "Finance is the study of creating and managing wealth. It is about corporations, individuals, governments and not-for-profit entities and how these entities manage their money. You will discover what \"the time value of money\" means, how to manage corporate cash flow and how to effectively allocate resources.",
+        "You will study investment management, financial analytic tools and corporate forecasting. After taking accounting and economics, you'll begin to analyze money in different ways to answer questions like: How do multinational corporations account for currency exchanges? When you are buying another company, how do you decide how much it is worth? What is involved when companies have their Initial Public Offering? What do Private Equity firms do? How do Venture Capital investors identify the next Facebook?",
+        "The undergraduate program is a 120 credit hour program that provides students with a foundation for a successful career in finance. In addition to classroom coursework, our program offers opportunities to participate in intra- and inter-collegiate case competitions, hands-on investment management practice, and student-led club activities. The Purdue Finance Workshop connects outstanding finance majors with successful alums pursuing careers in finance in every major financial center on the planet. The Financial Management Association has an active chapter on campus and connects students with finance professionals from corporations and hi-tech start-ups.",
+        "A student majoring in finance may choose from a range of management concentrations that strengthen the skill set and business integration skills for a high impact career in financial management. These include accounting, data analytics, management consulting, or innovation management.",
+        "The Daniels School also offers a one-year Master of Science in Finance program that is ideal for students with an undergraduate degree in economics, statistics, math, computer science or general management.",
+        "A range of opportunities are available to start your career in finance. Graduates can start out as financial analysts in large corporations looking at the bottom line and predicting profits. Other opportunities exist in a fast-paced financial leadership development program or investment banking or private equity firms. Other graduates find challenging careers in asset management, investment analysis, and equity research."
+      ],
+      "requiredCredits": 120,
+      "requiredCourseSequence": {
+        "note": "Source is organized categorically, not by semester. Verbatim course codes, titles, and credit hours preserved below exactly as published, including the ♦ critical-course marker and 'or' alternatives.",
+        "requiredMajorCourses_47credits": [
+          "ECON 25100 - Microeconomics Credits: 3.00 ♦ (satisfies Human Cultures Behavioral/Social Science for core)",
+          "ECON 25200 - Macroeconomics Credits: 3.00 (satisfies Human Cultures Behavioral/Social Science for core)",
+          "MGMT 20000 - Introductory Accounting Credits: 3.00 ♦",
+          "MGMT 20100 - Management Accounting I Credits: 3.00",
+          "MGMT 25400 - Legal Foundations Of Business I Credits: 3.00",
+          "MGMT 25500 - Foundations Of Business Ethics Credits: 1.00",
+          "MGMT 29500 - Career Readiness & Exploration Credits: 1.00",
+          "MGMT 30500 - Business Statistics Credits: 3.00",
+          "MGMT 31000 - Financial Management Credits: 3.00 ♦",
+          "MGMT 32400 - Marketing Management Credits: 3.00",
+          "MGMT 35200 - Strategic Management Credits: 3.00",
+          "MGMT 35300 - Intermediate Accounting For Non-Accounting Majors Credits: 3.00 ♦ or MGMT 35000 - Intermediate Accounting I Credits: 3.00 ♦",
+          "MGMT 36100 - Operations Management Credits: 3.00 ♦",
+          "MGMT 38200 - Management Information Systems Credits: 3.00",
+          "OBHR 33000 - Introduction To Organizational Behavior Credits: 3.00",
+          "MGMT 28800 - Programming For Business Applications Credits: 3.00 or MGMT 38800 - Python For Business Credits: 3.00 or MGMT 30600 - Management Science Credits: 3.00 or MGMT 47200 - Advanced Spreadsheet Modeling And Simulation Credits: 3.00 or ECON 36000 - Econometrics Credits: 3.00",
+          "MGMT 33500 - Strategic Business Writing Credits: 3.00 ♦ or ENGL 42000 - Business Writing Credits: 3.00 ♦ or ENGL 42100 - Technical Writing Credits: 3.00 ♦"
+        ],
+        "majorSelectives_21credits": {
+          "majorRequiredCourses_9credits": [
+            "MGMT 41100 - Investment Management Credits: 3.00",
+            "MGMT 41300 - Corporate Finance Credits: 3.00",
+            "MGMT 41310 - Financial Data Analysis And Modeling Credits: 3.00"
+          ],
+          "majorSelectives_chooseFour_12credits": [
+            "MGMT 41150 - Futures And Options Credits: 3.00",
+            "MGMT 41200 - Financial Institutions And Markets Credits: 3.00 or ECON 38000 - Money And Banking Credits: 3.00",
+            "MGMT 41250 - Fixed Income Securities Credits: 3.00",
+            "MGMT 41350 - Venture Capital And Entrepreneurial Finance Credits: 3.00",
+            "MGMT 41500 - International Financial Management Credits: 3.00",
+            "MGMT 41601 - Corporate Mergers And Acquisitions Credits: 3.00",
+            "MGMT 41650 - Financial Engineering Credits: 3.00",
+            "MGMT 41220 - FinTech Credits: 3.00"
+          ]
+        },
+        "culturalCompetencySelectives_6credits": [
+          "Cultural Competency I Selective - Credit Hours: 3.00",
+          "Cultural Competency II Selective - Credit Hours: 3.00",
+          "(Cultural Competency Selectives I & II for the Daniels School of Business)"
+        ],
+        "otherDepartmentalRequirements_26to38credits": {
+          "computingSelective_3credits": [
+            "CS 23500 - Introduction To Organizational Computing Credits: 3.00 ♦ or CS 17600 - Data Engineering In Python Credits: 3.00 ♦"
+          ],
+          "calculusSelective_3to5credits_QR_core": [
+            "MA 16010 - Applied Calculus I Credits: 3.00",
+            "MA 16100 - Plane Analytic Geometry And Calculus I Credits: 5.00",
+            "MA 16500 - Analytic Geometry And Calculus I Credits: 4.00"
+          ],
+          "statisticsSelective_3credits": [
+            "STAT 30301 - Probability And Statistics For Business Credits: 3.00",
+            "STAT 35000 - Introduction To Statistics Credits: 3.00",
+            "STAT 35500 - Statistics For Data Science Credits: 3.00"
+          ],
+          "humanCulturesBehavioralSocialSciencesSelective_3credits_BSS_core": [
+            "PSY 12000 - Elementary Psychology Credits: 3.00",
+            "SOC 10000 - Introductory Sociology Credits: 3.00"
+          ],
+          "writtenCommunicationSelective_3to4credits_WC_core": [
+            "SCLA 10100 - Transformative Texts, Critical Thinking And Communication I: Antiquity To Modernity Credits: 3.00",
+            "ENGL 10600 - First Year Composition With Conferences Credits: 4.00",
+            "ENGL 10800 - First Year Composition Credits: 3.00",
+            "HONR 19903 - Interdisciplinary Approaches In Writing Credits: 3.00"
+          ],
+          "oralCommunicationSelective_3credits_OC_core": [
+            "SCLA 10200 - Transformative Texts, Critical Thinking And Communication II: Modern World Credits: 3.00",
+            "COM 11400 - Fundamentals Of Speech Communication Credits: 3.00",
+            "COM 21700 - Science Writing And Presentation Credits: 3.00",
+            "EDPS 31500 - Collaborative Leadership: Interpersonal Skills Credits: 3.00"
+          ],
+          "humanCulturesHumanitiesSelective_3to4credits_HUM_core": "not enumerated on this source",
+          "science1Selective_2to5credits_core": "not enumerated on this source",
+          "science2Selective_2to5credits_core": "not enumerated on this source",
+          "scienceTechnologySocietySelective_1to3credits_STS_core": "not enumerated on this source"
+        },
+        "electives_8to20credits": "Electives - Credit Hours: 8.00-20.00 (general electives, not enumerated)"
+      },
+      "requirementLinesVerbatim": [
+        "Degree Requirements: 120 Credits Required. Department/Program Major Courses (74 credits).",
+        "Major Selectives (21 credits): Major Required Courses (9 credits); Major Selectives: Choose Four (12 credits).",
+        "MAI Requirements, GPA Requirements, Pass/No Pass Policy, and Transfer Credit Policy are identical shared 'School of Business Requirements' text to that recorded verbatim under the Accounting entry in this file — not re-quoted here to avoid duplication; see Accounting entry for full text.",
+        "The following gateway courses (listed by major) should be taken soon after you are admitted to Upper Division as they are pre-requisites for all Major Selectives: Finance, BS - MGMT 31000."
+      ],
+      "concentrationOrOptionMaterial": [
+        {
+          "label": "Optional Concentrations for Finance, BS (any one, not required)",
+          "conditional": true,
+          "evidence": "Data Analytics Concentration; Hospitality and Tourism Management Concentration; International Business Concentration; Innovation Management Concentration; Larsen Leaders Academy - Leadership Concentration; Management Consulting Concentration; Management Information Systems Concentration; Marketing Concentration; Operation & Supply Chain Management Concentration — all 'in the Daniels School of Business'.",
+          "source": "https://catalog.purdue.edu/mime/media/17/12500/2024-Daniels-School-Combined.pdf"
+        }
+      ],
+      "unresolvedSourceGaps": [
+        "Human Cultures: Humanities Selective, Science #1 Selective, Science #2 Selective, and Science, Technology & Society Selective — specific course options not enumerated on this combined-PDF source.",
+        "Electives (8-20 credits) are general/unenumerated by design.",
+        "Same newer-catalog-year caveat as Accounting: a 2025-2026 or 2026-2027 version could not be checked because the acalog pages for those catoids do not render on fetch.",
+        "MGMT/ECON course descriptions (lecture/case/project format) were not fetched."
+      ]
+    },
+    {
+      "publicProgramId": "purdue-wl:supply-chain-and-operations-management",
+      "displayName": "Supply Chain and Operations Management",
+      "degree": "BS",
+      "school": "Daniels School of Business",
+      "collectionStatus": "COMPLETE",
+      "authoritativeSourceUrls": [
+        {
+          "url": "https://catalog.purdue.edu/mime/media/17/12500/2024-Daniels-School-Combined.pdf",
+          "role": "PRIMARY — Daniels School of Business combined catalog PDF (undergraduate section). Source heading for this program reads 'Supply Chain & Operations Management, BS' (ampersand, vs. inventory's 'and'). Contains full program description, complete degree-requirement breakdown, and the shared School of Business Requirements section.",
+          "fetchedContent": true
+        },
+        {
+          "url": "https://admissions.purdue.edu/majors/supply-chain-and-operations-management/",
+          "role": "admissions major page — not fetched this pass; the combined catalog PDF is the more detailed and authoritative requirement source per the proven Daniels source strategy",
+          "fetchedContent": false
+        }
+      ],
+      "catalogYearUsed": "2024-2025 (fallback — identical situation and identical newer-year search attempt as documented in full on the Accounting entry above). PDF metadata: Title 'Purdue University - 2024-2025 University Catalog', CreationDate 2024-06-14T18:55:51Z.",
+      "programDescriptionEvidence": [
+        "Strategic design of agile operational systems and supply chains has become more important than ever with the rapid advancement of technology and the recent challenges faced by the public, private and nonprofit sectors. A successful future supply chain and operations leader needs a broad understanding of various business functions and a deep knowledge of the material flow, cash flow, and information flow that move around in and across business units, as well as the skills for efficient planning of human and non-human resources.",
+        "The Supply Chain and Operations Management program at the Daniels School emphasizes the latest business concepts, models, and strategies for modern supply chains and operations. This is achieved through a comprehensive curriculum that builds a strong business foundation of operations, finance, accounting, marketing, human resources, and leadership, coupled with a strong analytics foundation of data analysis, simulation, and model development. Most importantly, our expert faculty offer a rich set of advanced knowledge in logistics, manufacturing, strategic sourcing and procurement, and project management through advanced courses.",
+        "The Daniels School is ranked #9 for the best undergraduate production and operations management programs, #12 for best undergraduate supply chain management and logistics programs, and #9 for the best graduate supply chain management programs by U.S. News and World Report."
+      ],
+      "requiredCredits": 120,
+      "requiredCourseSequence": {
+        "note": "Source is organized categorically, not by semester. Verbatim course codes, titles, and credit hours preserved below exactly as published, including the ♦ critical-course marker and 'or' alternatives.",
+        "requiredMajorCourses_56credits": [
+          "ECON 25100 - Microeconomics Credits: 3.00 ♦ (satisfies Human Cultures Behavioral/Social Science for core)",
+          "ECON 25200 - Macroeconomics Credits: 3.00",
+          "ECON 30100 - Managerial Economics Credits: 3.00",
+          "MGMT 20000 - Introductory Accounting Credits: 3.00 ♦",
+          "MGMT 20100 - Management Accounting I Credits: 3.00",
+          "MGMT 25400 - Legal Foundations Of Business I Credits: 3.00",
+          "MGMT 25500 - Foundations Of Business Ethics Credits: 1.00",
+          "MGMT 29500 - Career Readiness & Exploration Credits: 1.00",
+          "MGMT 30500 - Business Statistics Credits: 3.00",
+          "MGMT 30600 - Management Science Credits: 3.00",
+          "MGMT 31000 - Financial Management Credits: 3.00",
+          "MGMT 32400 - Marketing Management Credits: 3.00",
+          "MGMT 35200 - Strategic Management Credits: 3.00",
+          "MGMT 36100 - Operations Management Credits: 3.00 ♦",
+          "MGMT 38200 - Management Information Systems Credits: 3.00 ♦",
+          "MGMT 46300 - Supply Chain Analytics Credits: 3.00 ♦",
+          "MGMT 46400 - Logistics: Concepts And Models Credits: 3.00",
+          "MGMT 46501 - Strategic Sourcing And Procurement Credits: 3.00",
+          "OBHR 33000 - Introduction To Organizational Behavior Credits: 3.00",
+          "MGMT 33500 - Strategic Business Writing Credits: 3.00 ♦ or ENGL 42000 - Business Writing Credits: 3.00 ♦ or ENGL 42100 - Technical Writing Credits: 3.00 ♦"
+        ],
+        "majorSelectives_15credits": [
+          "ECON 36000 - Econometrics Credits: 3.00",
+          "MGMT 26100 - Introduction To Supply Chain Management Credits: 3.00",
+          "MGMT 28800 - Programming For Business Applications Credits: 3.00 or CS 15900 - C Programming Credits: 3.00 or CNIT 17500 - Visual Programming Credits: 3.00 or CS 17700 - Programming With Multimedia Objects Credits: 4.00",
+          "MGMT 40500 - Six Sigma And Quality Analytics Credits: 3.00",
+          "MGMT 45200 - Manufacturing Strategy And Process Innovation Credits: 3.00",
+          "MGMT 46200 - Advanced Manufacturing Planning And Control Systems Credits: 3.00",
+          "MGMT 46600 - Project Management Credits: 3.00",
+          "MGMT 46800 - Supply Chain Technology Credits: 3.00",
+          "MGMT 47200 - Advanced Spreadsheet Modeling And Simulation Credits: 3.00",
+          "MGMT 47300 - Data Mining Credits: 3.00",
+          "MGMT 47400 - Predictive Analytics Credits: 3.00",
+          "MGMT 48800 - Data-Driven Decisions In Digital Markets Credits: 3.00",
+          "MGMT 54400 - Database Management Systems Credits: 3.00",
+          "MGMT 54500 - Systems Development Credits: 3.00",
+          "MGMT 54700 - Computer Communications Systems Credits: 3.00"
+        ],
+        "culturalCompetencySelectives_6credits": [
+          "Cultural Competency I Selective - Credit Hours: 3.00",
+          "Cultural Competency II Selective - Credit Hours: 3.00",
+          "(Cultural Competency Selectives I & II for the Daniels School of Business)"
+        ],
+        "otherDepartmentalProgramCourseRequirements_29to44credits": {
+          "humanCulturesBehavioralSocialSciencesSelective_3credits_BSS_core": [
+            "PSY 12000 - Elementary Psychology Credits: 3.00",
+            "SOC 10000 - Introductory Sociology Credits: 3.00"
+          ],
+          "computerScienceSelective_3credits": [
+            "CS 23500 - Introduction To Organizational Computing Credits: 3.00",
+            "CS 17600 - Data Engineering In Python Credits: 3.00",
+            "CS 18200 - Foundations Of Computer Science Credits: 3.00",
+            "CS 24000 - Programming In C Credits: 3.00"
+          ],
+          "calculusISelective_3to5credits_QR_core": [
+            "MA 16010 - Applied Calculus I Credits: 3.00",
+            "MA 16100 - Plane Analytic Geometry And Calculus I Credits: 5.00",
+            "MA 16500 - Analytic Geometry And Calculus I Credits: 4.00"
+          ],
+          "calculusIISelective_3to5credits_QR_core": [
+            "MA 16020 - Applied Calculus II Credits: 3.00",
+            "MA 16200 - Plane Analytic Geometry And Calculus II Credits: 5.00",
+            "MA 16600 - Analytic Geometry And Calculus II Credits: 4.00"
+          ],
+          "writtenCommunicationSelective_3to4credits_WC_core": [
+            "SCLA 10100 - Transformative Texts, Critical Thinking And Communication I: Antiquity To Modernity Credits: 3.00",
+            "ENGL 10600 - First Year Composition With Conferences Credits: 4.00",
+            "ENGL 10800 - First Year Composition Credits: 3.00",
+            "HONR 19903 - Interdisciplinary Approaches In Writing Credits: 3.00"
+          ],
+          "oralCommunicationSelective_3credits_OC_core": [
+            "SCLA 10200 - Transformative Texts, Critical Thinking And Communication II: Modern World Credits: 3.00",
+            "COM 11400 - Fundamentals Of Speech Communication Credits: 3.00",
+            "COM 21700 - Science Writing And Presentation Credits: 3.00",
+            "EDPS 31500 - Collaborative Leadership: Interpersonal Skills Credits: 3.00"
+          ],
+          "statisticsSelective_3credits": [
+            "STAT 30301 - Probability And Statistics For Business Credits: 3.00",
+            "STAT 35000 - Introduction To Statistics Credits: 3.00",
+            "STAT 35500 - Statistics For Data Science Credits: 3.00"
+          ],
+          "science1Selective_2to5credits_core": "not enumerated on this source",
+          "science2Selective_2to5credits_core": "not enumerated on this source",
+          "humanCulturesHumanitiesSelective_3to4credits_HUM_core": "not enumerated on this source",
+          "scienceTechnologySocietySelective_1to3credits_STS_core": "not enumerated on this source"
+        },
+        "electives_0to14credits": "Electives - Credit Hours: 0.00-14.00 (general electives, not enumerated)"
+      },
+      "requirementLinesVerbatim": [
+        "Degree Requirements: 120 Credits Required. Department/Program Major Courses (77 credits).",
+        "Required Major Courses (56 credits). Major Selectives (15 credits).",
+        "MAI Requirements, GPA Requirements, Pass/No Pass Policy, and Transfer Credit Policy are identical shared 'School of Business Requirements' text to that recorded verbatim under the Accounting entry in this file — not re-quoted here to avoid duplication; see Accounting entry for full text.",
+        "The following gateway courses (listed by major) should be taken soon after you are admitted to Upper Division as they are pre-requisites for all Major Selectives: Supply Chain & Operations Managment, BS - MGMT 30500 & MGMT 36100.",
+        "Optional Concentration for Supply Chain & Operations Management, BS: Data Analytics Concentration in the Daniels School of Business; Hospitality and Tourism Management Concentration in the Daniels School of Business; International Business Concentration in the Daniels School of Business; Innovation Management Concentration in the Daniels School of Business; Larsen Leaders Academy - Leadership Concentration in the Daniels School of Business; Management Consulting Concentration in the Daniels School of Business; Marketing Concentration in the Daniels School of Business."
+      ],
+      "concentrationOrOptionMaterial": [
+        {
+          "label": "Optional Concentrations for Supply Chain & Operations Management, BS (any one, not required)",
+          "conditional": true,
+          "evidence": "Data Analytics Concentration; Hospitality and Tourism Management Concentration; International Business Concentration; Innovation Management Concentration; Larsen Leaders Academy - Leadership Concentration; Management Consulting Concentration; Marketing Concentration — all 'in the Daniels School of Business'. Note: unlike Accounting and Finance, the source does not list a Management Information Systems Concentration or an Operation & Supply Chain Management Concentration option for this major (the latter would be redundant with the major itself).",
+          "source": "https://catalog.purdue.edu/mime/media/17/12500/2024-Daniels-School-Combined.pdf"
+        }
+      ],
+      "unresolvedSourceGaps": [
+        "Science #1 Selective, Science #2 Selective, Human Cultures: Humanities Selective, and Science, Technology & Society Selective — specific course options not enumerated on this combined-PDF source.",
+        "Electives (0-14 credits) are general/unenumerated by design.",
+        "Same newer-catalog-year caveat as Accounting: a 2025-2026 or 2026-2027 version could not be checked because the acalog pages for those catoids do not render on fetch.",
+        "Program name in the inventory ('Supply Chain and Operations Management') differs by ampersand-vs-'and' from the source heading ('Supply Chain & Operations Management, BS'); treated as the same program based on identical publicProgramId slug, degree, and school — flagged for downstream disambiguation, not resolved here.",
+        "MGMT/ECON course descriptions (lecture/case/project format) were not fetched."
+      ]
+    }
+  ],
+  "processingLog": {
+    "turnBudgetConsumed_thisTurn": "1 web_fetch of the Daniels combined PDF (1MB, 154 pages) + several web_search calls to confirm no newer catalog PDF exists + local pdftotext extraction (poppler-utils installed this session) to read the full document text, since WebFetch's summarizing model could not read the raw PDF binary directly. Yielded 3 complete Daniels program profiles from one underlying source fetch, consistent with the prior session's Daniels-college cost estimate (1 fetch → multiple programs).",
+    "collegeStatus": {
+      "Pharmacy": "COMPLETE — 0 remaining after Pharmaceutical Sciences (done in a prior turn).",
+      "Veterinary Medicine": "0 remaining in scope, but the 1 in-scope program (Veterinary Technology) is PARTIAL from a prior turn, not complete — required-course list still not obtained, blocked on acalog.",
+      "Daniels School of Business": "COMPLETE — all 3 remaining programs (Accounting, Finance, Supply Chain and Operations Management) done this turn. Verified: each appears exactly once, no already-completed Daniels major (BAIM, Economics Business, General Management, IBE, Marketing, Quantitative Business Economics) was re-added, and OBHR was correctly excluded as currentRecommendationEligible:false. Every evidence block sourced to the combined PDF URL.",
+      "Purdue Polytechnic Institute": "NOT STARTED — 17 programs remaining. Next per the process order in PATHFINDER_EXTRACTION.md.",
+      "Engineering": "NOT STARTED — 10 programs remaining.",
+      "Health and Human Sciences": "NOT STARTED — 19 programs remaining.",
+      "Liberal Arts": "NOT STARTED — 20 programs remaining, no proven source pattern.",
+      "Agriculture": "NOT STARTED — 17 programs remaining, no proven source pattern.",
+      "Education": "NOT STARTED — 7 programs remaining, no proven source pattern.",
+      "Science": "NOT STARTED — 21 programs remaining, flagged as most expensive (combined PDF ~85% boilerplate)."
+    },
+    "extrapolatedRemainingScope": "108 programs remain fully unstarted (116 total − 5 done, counting the Veterinary Technology partial as not-done for this purpose = 111 not-started + 1 partial = 112 remaining in some state; 108 of those are fully untouched). At roughly 1 fetch producing 1-6 programs depending on college source density, this remains multi-session work; each college should still be checkpointed separately per the spec.",
+    "knownBlockers": [
+      "acalog catalog.purdue.edu/preview_program.php AND content.php pages do not render on fetch across all tested catoid values (7, 8, 13, 15, 16, 17, 18, 19) — confirmed again this session including against the current 2026-2027 catalog (catoid=19). This blocks catalog-page-based extraction for any program whose only current-catalog link is an acalog page, including Veterinary Technology. catalog.purdue.edu/index.php (the catalog home page) DOES render — the blocker is specific to content.php/preview_program.php, not the whole acalog domain.",
+      "No headless-browser tool (Playwright/Puppeteer) was available or installed in this environment for this turn; the acalog blocker was worked around for Daniels only because a combined static PDF exists for that college. Colleges without a combined PDF and without a per-department PDF pattern (Liberal Arts, Agriculture, Education) will likely need either a headless browser or further search-based discovery of alternate PDF/HTML sources.",
+      "PDF text extraction required installing poppler-utils (apt-get) this session, since WebFetch's built-in summarizer could not parse the raw PDF binary. Future sessions in a fresh environment will need to repeat this install step, or fetch the PDF then run pdftotext -layout on it, before attempting to read Daniels/Engineering/Science combined-PDF sources."
+    ],
+    "recommendedContinuation": "Next: Purdue Polytechnic Institute (17 programs), using the proven admissions-page → department-page → studio/course-structure-page chain. Then Engineering (10 programs) using the school program-map-PDF + capstone-page pattern. Then Health and Human Sciences (19), checking first whether other HHS departments publish a dated plan-of-study PDF the way Pharmacy did. Science (21) and the three no-pattern colleges (Liberal Arts 20, Agriculture 17, Education 7) should be done last, per the spec's ordering."
+  }
+}
