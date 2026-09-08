@@ -1,0 +1,1020 @@
+{
+  "manifestVersion": "1.0.0",
+  "purpose": "Handoff manifest for the frozen PathFinder 116-major program-card extraction. Records provenance, counts, adjudication deltas and unresolved items so the outputs can be independently validated without rerunning the extraction.",
+  "finalizedAt": "2026-08-19T23:09:00Z",
+  "extractionGeneratedAt": "2026-08-19T22:41:15Z",
+  "frozen": true,
+  "deliverables": [
+    {
+      "filename": "restOfMajorsClaude.final.json",
+      "bytes": 1229818,
+      "sha256": "aceb139573d4d318cc2a8331877b9072a95783b441cab3b1bdd47a082ce4eb86"
+    },
+    {
+      "filename": "restOfMajorsClaude.audit.json",
+      "bytes": 690098,
+      "sha256": "55a2aea98d4cc6b2281c507bf51236a170887adbad7f8d212a03f8491256cad3"
+    },
+    {
+      "filename": "restOfMajorsClaude.audit.md",
+      "bytes": 47837,
+      "sha256": "1475236169d84a1201159f9b8e3527cc6b1bae3a5ebb0478f99e41b2f58e55e9"
+    },
+    {
+      "filename": "restOfMajorsClaude.handoff.json",
+      "bytes": null,
+      "sha256": null,
+      "note": "self-referential: this manifest cannot contain its own SHA-256. The checksum is computed after this file is written and is reported in the handoff response alongside the other three."
+    }
+  ],
+  "inputs": {
+    "note": "SHA-256 values below are of the uploaded input files as they existed in this session's upload directory at handoff time.",
+    "sourceEvidence": {
+      "role": "frozen source-evidence baseline (authoritative)",
+      "filenameAsUploaded": "5cbfb905-restOfMajorsSources_3.json",
+      "originalFilename": "restOfMajorsSources (3).json",
+      "sha256": "fc7707774713fba60b69d55d493cf893e9c8c80267a42c71f37791ebde675258",
+      "bytes": 947196
+    },
+    "reviewedConceptBaseline": {
+      "role": "reviewed concept assignments and sourceChecksum values",
+      "filenameAsUploaded": "77ec67a4-purdueprogramfitreview20260816.json",
+      "originalFilename": "purdue-program-fit-review-2026-08-16.json",
+      "sha256": "689521daf6ece7a9df30916de5706de98edb13ade7f099c30a450df622c0f5f2"
+    },
+    "conceptVocabulary": {
+      "role": "CONTROLLED_PROGRAM_CONCEPTS (52 concepts)",
+      "filenameAsUploaded": "0edc9baf-rankingpolicy4.ts",
+      "originalFilename": "ranking-policy-4.ts",
+      "sha256": "9b07e75da5572a8c8c28eb42ccdaddedec2845e87f6f6e5ad28353abb3d5054f"
+    },
+    "cardContract": {
+      "role": "ProgramCard shape, 19 characteristic fields, enums, importValidatedProgramCards",
+      "filenameAsUploaded": "3ef656be-coresupportingranking.ts",
+      "originalFilename": "core-supporting-ranking.ts",
+      "sha256": "3cc02e88fc3cecc01eead26637ef5680f87a9d24a15c0b834fa6e15bd180cf95"
+    },
+    "fieldExtractionRubric": {
+      "role": "governing evidence rubric (R2 conditional rule, R3 University Core rule, absent-requires-affirmative-evidence rule)",
+      "filenameAsUploaded": "c0530d7d-Claude_Field_Extraction_V2.md",
+      "originalFilename": "Claude_Field_Extraction_V2.md",
+      "sha256": "f2fdcfa6778b081c6c1d5069c7707cc5aecc6b9f197aaccf6d6e10badefacd04"
+    },
+    "joinKey": "publicProgramId - used as the canonical join key throughout; display names were never used to join.",
+    "checksumRule": "Each card's source.contentChecksum is the reviewed sourceChecksum copied verbatim from the reviewed concept baseline. No checksum was computed or invented for card provenance."
+  },
+  "authoritativeSourceConfirmation": {
+    "confirmed": true,
+    "statement": "The frozen source upload was treated as authoritative wherever it differed from the session working copy. All 116 cards were built from the upload, not the working copy.",
+    "frozenUpload": {
+      "path": "/root/.claude/uploads/5717a77d-a9a1-587b-b9bc-791e3a9d45ef/5cbfb905-restOfMajorsSources_3.json",
+      "sha256": "fc7707774713fba60b69d55d493cf893e9c8c80267a42c71f37791ebde675258",
+      "bytes": 947196
+    },
+    "workingCopyNotUsed": {
+      "path": "/home/user/FILES/restOfMajorsSources.json",
+      "sha256": "8c8cfb4ccda6fcaf877d9c6bfc0c266c8c3c554e1567c1f5fa07d1409a758664",
+      "bytes": 950352,
+      "knownDelta": "The working copy differs from the frozen upload in exactly one program record, purdue-wl:music (a low-confidence snippet patch added during an earlier sourcing pass). That patch was NOT carried into the cards; the frozen upload's music record was used."
+    }
+  },
+  "counts": {
+    "totalPrograms": 116,
+    "uniquePublicProgramIds": 116,
+    "sourceStatus": {
+      "COMPLETE": 103,
+      "PARTIAL": 13
+    },
+    "programsBySchool": {
+      "Agriculture": 17,
+      "Daniels School of Business": 3,
+      "Education": 7,
+      "Engineering": 10,
+      "Health and Human Sciences": 19,
+      "Liberal Arts": 20,
+      "Pharmacy": 1,
+      "Purdue Polytechnic Institute": 17,
+      "Science": 21,
+      "Veterinary Medicine": 1
+    },
+    "fieldCells": {
+      "total": 2204,
+      "formula": "116 programs x 19 characteristic fields",
+      "high": 371,
+      "medium": 321,
+      "low": 291,
+      "unknown": 1221,
+      "absent": 0,
+      "conditionalTrue": 61,
+      "conditionalNote": "conditional is an independent boolean flag on a field cell, not a value; it is not part of the high/medium/low/unknown/absent partition, which sums to 2204."
+    },
+    "concepts": {
+      "reviewedBaselineAssignments": 527,
+      "preservedUnchanged": 525,
+      "added": 81,
+      "removed": 1,
+      "relationshipChanged": 1,
+      "totalDeviationsFromReviewedBaseline": 83,
+      "finalAssignmentsOnCards": 607
+    }
+  },
+  "conceptChanges": {
+    "count": 83,
+    "programsAffected": 46,
+    "note": "Full reason, supporting evidence, source URL and locator for every row below are in restOfMajorsClaude.audit.json under conceptAdjudication.changes[].",
+    "changes": [
+      {
+        "publicProgramId": "purdue-wl:pharmaceutical-sciences",
+        "conceptId": "research-discovery",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:pharmaceutical-sciences",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:accounting",
+        "conceptId": "financial-statements",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:accounting",
+        "conceptId": "budgets-costs-controls",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:accounting",
+        "conceptId": "data-analysis",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:finance",
+        "conceptId": "accounting-records",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:finance",
+        "conceptId": "business-organizations",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:supply-chain-and-operations-management",
+        "conceptId": "economics-policy",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:aeronautical-engineering-technology",
+        "conceptId": "research-discovery",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:aviation-management",
+        "conceptId": "law-government-policy",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:cybersecurity",
+        "conceptId": "law-government-policy",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:animation-and-visual-effects",
+        "conceptId": "civil-infrastructure",
+        "changeType": "removed",
+        "previousState": "supporting",
+        "finalState": "absent"
+      },
+      {
+        "publicProgramId": "purdue-wl:organizational-leadership",
+        "conceptId": "teaching-learning",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:organizational-leadership",
+        "conceptId": "psychology-behavior",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:aeronautical-astronautical-engineering",
+        "conceptId": "mathematics",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:aeronautical-astronautical-engineering",
+        "conceptId": "physics",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:aeronautical-astronautical-engineering",
+        "conceptId": "mechanics-physical-systems",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:aeronautical-astronautical-engineering",
+        "conceptId": "design-build-test",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:aeronautical-astronautical-engineering",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:aeronautical-astronautical-engineering",
+        "conceptId": "software-programming",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:biomedical-engineering",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:biomedical-engineering",
+        "conceptId": "design-build-test",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:chemical-engineering",
+        "conceptId": "design-build-test",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:civil-engineering",
+        "conceptId": "design-build-test",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:civil-engineering",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:electrical-engineering",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:materials-engineering",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:materials-engineering",
+        "conceptId": "design-build-test",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:nuclear-engineering",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:nuclear-engineering",
+        "conceptId": "physics",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:nuclear-engineering",
+        "conceptId": "materials",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:nuclear-engineering",
+        "conceptId": "mathematics",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:nuclear-engineering",
+        "conceptId": "design-build-test",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:occupational-environmental-health-sciences",
+        "conceptId": "chemistry",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:occupational-environmental-health-sciences",
+        "conceptId": "biology-living-systems",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:occupational-environmental-health-sciences",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:occupational-environmental-health-sciences",
+        "conceptId": "law-government-policy",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:radiological-health-sciences",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:biomedical-health-sciences",
+        "conceptId": "chemistry",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:biomedical-health-sciences",
+        "conceptId": "biology-living-systems",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:nutrition-dietetics-nutrition-fitness-health",
+        "conceptId": "chemistry",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:nutrition-dietetics-nutrition-fitness-health",
+        "conceptId": "biology-living-systems",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:english",
+        "conceptId": "history-culture-society",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:interdisciplinary-studies",
+        "conceptId": "history-culture-society",
+        "changeType": "relationship_changed",
+        "previousState": "supporting",
+        "finalState": "core"
+      },
+      {
+        "publicProgramId": "purdue-wl:interior-design",
+        "conceptId": "buildings-built-environment",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:studio-arts-and-technology",
+        "conceptId": "history-culture-society",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:theatre",
+        "conceptId": "history-culture-society",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:theatre",
+        "conceptId": "leadership-teamwork",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:agricultural-engineering",
+        "conceptId": "engineering-systems",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:agricultural-engineering",
+        "conceptId": "design-build-test",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:agricultural-engineering",
+        "conceptId": "mathematics",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:biological-engineering",
+        "conceptId": "engineering-systems",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:biological-engineering",
+        "conceptId": "design-build-test",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:biological-engineering",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:aquatic-sciences",
+        "conceptId": "animals-wildlife",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:food-science",
+        "conceptId": "manufacturing-production",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:food-science",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:forestry",
+        "conceptId": "plants-agriculture",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:sales-and-marketing",
+        "conceptId": "economics-policy",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:sales-and-marketing",
+        "conceptId": "data-analysis",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:elementary-education",
+        "conceptId": "psychology-behavior",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:english-education",
+        "conceptId": "psychology-behavior",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:english-education",
+        "conceptId": "history-culture-society",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:special-education-mild-intense-intervention-p-12",
+        "conceptId": "psychology-behavior",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:special-education-mild-intense-intervention-p-12",
+        "conceptId": "children-families",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:inclusion-dual-license-special-and-elementary-education",
+        "conceptId": "psychology-behavior",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:inclusion-dual-license-special-and-elementary-education",
+        "conceptId": "children-families",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:inclusion-dual-license-special-and-elementary-education",
+        "conceptId": "mathematics",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:general-education-curriculum-and-instruction-non-licensure",
+        "conceptId": "psychology-behavior",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:general-education-educational-studies-non-licensure",
+        "conceptId": "psychology-behavior",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:general-education-educational-studies-non-licensure",
+        "conceptId": "leadership-teamwork",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:cell-molecular-and-developmental-biology",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:cell-molecular-and-developmental-biology",
+        "conceptId": "chemistry",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:chemical-biology-and-biochemistry",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:chemistry",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:ecology-evolution-and-environmental-sciences",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:ecology-evolution-and-environmental-sciences",
+        "conceptId": "chemistry",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:environmental-geosciences",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:geology-and-geophysics",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:health-and-disease",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:health-and-disease",
+        "conceptId": "chemistry",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:neurobiology-and-physiology",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      },
+      {
+        "publicProgramId": "purdue-wl:physics-applied",
+        "conceptId": "laboratory-work",
+        "changeType": "added",
+        "previousState": "absent",
+        "finalState": "supporting"
+      }
+    ]
+  },
+  "highlightedConceptChanges": {
+    "relationshipChange": {
+      "publicProgramId": "purdue-wl:interdisciplinary-studies",
+      "conceptId": "history-culture-society",
+      "changeType": "relationship_changed",
+      "previousState": "supporting",
+      "finalState": "core",
+      "why": "The reviewed baseline gave this program seven supporting concepts and no core concept. rankValidatedAiMajors excludes any card with zero matched core concepts (reason 'zero_core_match'), so the card would have been permanently unrankable. The promotion is justified by the program description's named focus areas (American culture; Jewish life and history; The African Diaspora). This is the only relationship change in the dataset.",
+      "auditReference": "crossProgramConsistencyFindings CPC-08"
+    },
+    "removal": {
+      "publicProgramId": "purdue-wl:animation-and-visual-effects",
+      "conceptId": "civil-infrastructure",
+      "changeType": "removed",
+      "previousState": "supporting",
+      "finalState": "absent",
+      "why": "The assignment traced only to an industry-application sentence ('education, product and packaging, construction, healthcare and courtrooms'). Nothing in the 39-credit major or its selectives supports it. This is the only concept removal in the dataset.",
+      "auditReference": "crossProgramConsistencyFindings CPC-07"
+    }
+  },
+  "partialPrograms": {
+    "count": 13,
+    "publicProgramIds": [
+      "purdue-wl:veterinary-technology",
+      "purdue-wl:virtual-design-construction",
+      "purdue-wl:multidisciplinary-engineering",
+      "purdue-wl:biomedical-health-sciences",
+      "purdue-wl:design-studies",
+      "purdue-wl:english",
+      "purdue-wl:music",
+      "purdue-wl:studio-arts-and-technology",
+      "purdue-wl:animal-sciences",
+      "purdue-wl:biochemistry",
+      "purdue-wl:forestry",
+      "purdue-wl:astrophysics",
+      "purdue-wl:biomolecular-design"
+    ]
+  },
+  "sourceStatusMismatches": {
+    "count": 14,
+    "explanation": "The source file's collectionStatus and the reviewed baseline's status measure different things (source-collection completeness versus concept-review coverage). Both values are carried on every per-program audit row rather than reconciled.",
+    "mismatches": [
+      {
+        "publicProgramId": "purdue-wl:veterinary-technology",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:virtual-design-construction",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:multidisciplinary-engineering",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:biomedical-health-sciences",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:design-studies",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:english",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:interdisciplinary-studies",
+        "sourceCollectionStatus": "COMPLETE",
+        "reviewedBaselineStatus": "partial"
+      },
+      {
+        "publicProgramId": "purdue-wl:music",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:studio-arts-and-technology",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:animal-sciences",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:biochemistry",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:forestry",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:astrophysics",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      },
+      {
+        "publicProgramId": "purdue-wl:biomolecular-design",
+        "sourceCollectionStatus": "PARTIAL",
+        "reviewedBaselineStatus": "complete"
+      }
+    ]
+  },
+  "unresolvedIssues": {
+    "resolutionStatement": "These items were recorded during adjudication and were NOT resolved after the final validation. No semantic or data change was made to address any of them. They are reproduced here exactly as they stand in restOfMajorsClaude.audit.json.",
+    "items": [
+      {
+        "id": "SRC-01",
+        "title": "Astrophysics progression-guide discrepancy",
+        "status": "recorded, not resolved",
+        "record": {
+          "id": "SRC-01",
+          "observation": "The frozen source file's top-level statusNote claims 'Astrophysics (Science) was substantially upgraded from description-only to a full semester-by-semester course sequence via a College of Science Program Progression Guide PDF', but the purdue-wl:astrophysics program record itself still carries collectionStatus 'PARTIAL -- description-only' and requiredCourseSequence {note: 'Not obtainable'}.",
+          "impact": "The Astrophysics card is built from the record, not the statusNote: 17 of its 19 fields are unknown. If the progression-guide data exists elsewhere, re-running this program against it would materially improve the card.",
+          "severity": "observation - not a packaging blocker"
+        }
+      },
+      {
+        "id": "SRC-02",
+        "title": "Astrophysics and Biomolecular Design weak / description-only sourcing",
+        "status": "recorded, not resolved",
+        "record": {
+          "id": "SRC-02",
+          "observation": "Two Science programs (Astrophysics, Biomolecular Design) are description-only because the Purdue acalog preview_program.php pages sit behind an AWS WAF bot challenge, confirmed by both direct curl and a headless Chromium session. Biomolecular Design's second description sentence is additionally flagged in the source as paraphrased rather than verbatim.",
+          "impact": "These two cards carry the weakest evidence in the dataset (17 and 16 unknown fields respectively) and every value they do carry has requiredStatus 'unknown'.",
+          "severity": "observation - the cards remain importable and rankable"
+        }
+      },
+      {
+        "id": "CPC-05",
+        "title": "Concentration-specific evidence scope (Multidisciplinary Engineering)",
+        "status": "recorded, not resolved",
+        "record": {
+          "id": "CPC-05",
+          "scope": "Multidisciplinary Engineering",
+          "finding": "The reviewed baseline's visual-design and music-sound-performance concepts derive from the Visual Design Engineering and Theatre Engineering concentrations, not from the parent program's required core.",
+          "resolution": "Both concepts preserved (the standard is preserve-unless-clear-evidence, and concentration coursework is real coursework for the students who take it) but tagged evidenceScope 'concentration-specific' in the concept ledger, and the corresponding fields left unknown so concentration content does not inflate the parent card."
+        }
+      },
+      {
+        "id": "CPC-06",
+        "title": "Concentration-specific evidence scope (Animal Sciences, Horticulture)",
+        "status": "recorded, not resolved",
+        "record": {
+          "id": "CPC-06",
+          "scope": "Animal Sciences, Horticulture",
+          "finding": "Business-related concepts on these Agriculture programs rest on named concentrations rather than on the parent required sequence.",
+          "resolution": "Same treatment as CPC-05: concepts preserved with evidenceScope 'concentration-specific', business_organizational left unknown on the parent card."
+        }
+      },
+      {
+        "id": "SRC-03",
+        "title": "14 source-status mismatches between the supplied inputs",
+        "status": "recorded, not resolved",
+        "record": {
+          "id": "SRC-03",
+          "observation": "13 programs carry a PARTIAL source-collection status while the reviewed concept baseline marks 112 of those same programs 'complete'; conversely purdue-wl:interdisciplinary-studies is COMPLETE in the source but 'partial' in the reviewed baseline. 14 such mismatches exist.",
+          "impact": "None - the two fields measure different things (source-collection completeness versus concept-review coverage). Both are carried on every per-program audit row so the difference is visible rather than silently reconciled.",
+          "severity": "observation"
+        },
+        "mismatches": [
+          {
+            "publicProgramId": "purdue-wl:veterinary-technology",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:virtual-design-construction",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:multidisciplinary-engineering",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:biomedical-health-sciences",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:design-studies",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:english",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:interdisciplinary-studies",
+            "sourceCollectionStatus": "COMPLETE",
+            "reviewedBaselineStatus": "partial"
+          },
+          {
+            "publicProgramId": "purdue-wl:music",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:studio-arts-and-technology",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:animal-sciences",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:biochemistry",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:forestry",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:astrophysics",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          },
+          {
+            "publicProgramId": "purdue-wl:biomolecular-design",
+            "sourceCollectionStatus": "PARTIAL",
+            "reviewedBaselineStatus": "complete"
+          }
+        ]
+      }
+    ],
+    "additionalRecordedObservations": [
+      {
+        "id": "SRC-04",
+        "observation": "Four programs have no usable program-specific description prose: their programDescriptionEvidence entries are shared College of Science boilerplate, a college licensure statement, or the source collector's own note that no 'About the Program' prose was present.",
+        "severity": "observation"
+      },
+      {
+        "id": "SRC-05",
+        "observation": "Two Science programs (Chemistry - American Chemical Society, Statistics with Mathematics Option) and one Mathematics program had their source reads truncated partway through the generic College of Science Core section, and two Education programs (both non-licensure General Education majors) have unre-captured Pass/No Pass, Civics Literacy and Race/Ethnic/Cultural Diversity sections.",
+        "severity": "observation"
+      },
+      {
+        "id": "SRC-06",
+        "observation": "The source records a naming discrepancy for purdue-wl:ecology-evolution-and-environmental-sciences: the inventory display name is 'Ecology, Evolution and Environmental Sciences' while the catalog heading reads 'Ecology, Evolution, and Environmental Biology, BS'.",
+        "severity": "observation"
+      },
+      {
+        "id": "SRC-07",
+        "observation": "The source file has no per-program retrieval timestamp.",
+        "severity": "observation"
+      }
+    ]
+  },
+  "validation": {
+    "cardCount": 116,
+    "uniquePublicProgramIds": 116,
+    "sortedByPublicProgramId": true,
+    "importValidation": {
+      "contract": "importValidatedProgramCards (core-supporting-ranking.ts)",
+      "result": "PASS",
+      "blockerCount": 0,
+      "checksRun": [
+        "64-hex lowercase contentChecksum",
+        "non-empty source.url / locator / retrievedAt",
+        "statement is string or null",
+        "concept IDs inside CONTROLLED_PROGRAM_CONCEPTS",
+        "relationship in {core, supporting}",
+        "no duplicate concept per card",
+        "exactly 19 characteristic fields",
+        "field value / relevance / requiredStatus enums",
+        "conditional is boolean",
+        "every evidence ref has id and statement",
+        "at least one core concept (rankValidatedAiMajors zero_core_match exclusion)"
+      ]
+    },
+    "additionalVerifications": {
+      "everyCardHasAtLeastOneCoreConcept": true,
+      "everyContentChecksumMatchesReviewedBaseline": true,
+      "everyContentChecksumIsLowercase64Hex": true,
+      "fieldCellsCarryingAbsent": 0,
+      "substantiveFieldValuesWithoutEvidence": 0
+    }
+  },
+  "handoffStatements": {
+    "noFurtherSemanticOrDataChanges": "No semantic or data change was made to any of the 116 program cards after the frozen final validation. The handoff manifest is additive provenance only.",
+    "noRepositoryIntegration": "No repository integration was performed.",
+    "noCommit": "No commit was performed.",
+    "noPush": "No push to GitHub was performed.",
+    "branchUnchanged": "No branch was created, switched, or modified."
+  },
+  "independentValidationNotes": [
+    "restOfMajorsClaude.final.json is a bare JSON array of 116 card objects, sorted by publicProgramId - it can be passed directly to importValidatedProgramCards as the records argument.",
+    "eligiblePublicProgramIds for that import call is the set of 116 publicProgramId values in the array; it is not carried inside the file.",
+    "source.retrievedAt is the literal string 'unknown' on every card because the source evidence file records no per-program retrieval timestamp. This satisfies the importer's non-empty string check.",
+    "source.statement is null on 4 cards whose only description prose was shared college boilerplate or the source collector's own note; see audit observation SRC-04."
+  ]
+}
